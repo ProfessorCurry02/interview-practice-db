@@ -100,4 +100,4 @@ Aspiring Data Analyst / Software Engineer
 
 -  Email: bharath.shanmugasundaram@gmail.com  
 -  LinkedIn: www.linkedin.com/in/bharath-shanmugasundaram-47a590224
--  GitHub: 
+-  GitHub: https://github.com/ProfessorCurry02
