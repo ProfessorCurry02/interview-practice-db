@@ -21,3 +21,11 @@ CREATE TABLE EMPLOYEE(
     CONSTRAINT CHK_Joining_After_Birth CHECK (Emp_Join_Date > Emp_DOB),
     CONSTRAINT CHK_Joining_Age CHECK (DATEDIFF(YEAR, Emp_DOB, Emp_Join_Date) >= 18)
 );
+--EMPLOYEE_LOGINS table was created for the sole purpose of the User Retention Query.
+CREATE TABLE EMPLOYEE_LOGINS (
+    Login_ID INT IDENTITY(1,1) PRIMARY KEY,
+    Emp_ID INT NOT NULL,
+    temp_login_date DATE NOT NULL,
+    CONSTRAINT FK_EmployeeLogins_Employee 
+        FOREIGN KEY (Emp_ID) REFERENCES EMPLOYEE(Emp_ID)
+);
